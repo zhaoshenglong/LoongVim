@@ -2,9 +2,7 @@ return {
   {
     "L3MON4D3/LuaSnip",
     lazy = true,
-    build = (not LoongVim.is_win())
-        and "echo 'NOTE: jsregexp is optional, so not a big deal if it fails to build'; make install_jsregexp"
-      or nil,
+    build = "echo 'NOTE: jsregexp is optional, so not a big deal if it fails to build'; make install_jsregexp",
     dependencies = {
       {
         "rafamadriz/friendly-snippets",
